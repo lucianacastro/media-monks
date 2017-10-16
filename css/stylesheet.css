@@ -1,0 +1,104 @@
+img#scene {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 100vh;
+	min-height: 753px;
+	transition: transform ease-in-out 1000ms;
+}
+
+.main-title {
+	position: absolute;
+	width: 100%;
+	max-width: 550px;
+	color: #fff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 42px;
+	z-index: 100;
+}
+.main-title.top-left {
+	top: 0;
+	left: 0;
+}
+
+
+.button {
+	position: fixed;
+	width: 60px;
+	height: 90px;
+	color: #fff;
+	font-size: 50px;
+	z-index: 100;
+	text-decoration: none;
+}
+
+.button-prev {
+	top: 50%;
+	left: 0;
+	margin: -45px 0 0 40px;
+	background-image: url('../assets/images/sprite.png');
+	background-position: -388px -425px;
+	transform: scaleX(-1);
+}
+
+.button-next {
+	top: 50%;
+	right: 0;
+	margin: -45px 40px 0 0;
+	background-image: url('../assets/images/sprite.png');
+	background-position: -388px -425px;
+}
+
+.footer__text {
+	z-index: 100;
+	color: #fff;
+}
+
+.footer__button-container {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	border: 1px dotted #fff;
+}
+
+.footer__button-container li {
+	position: relative;
+	float: left;
+	width: 10px;
+	height: 6px;
+	padding: 3px;
+	border-left: 1px dotted #fff;
+}
+.footer__button-container li:nth-of-type(1) {
+	border-left: none;
+}
+
+
+.footer__button {
+	position: absolute;
+	width: 10px;
+	height: 6px;
+	text-decoration: none;
+	font-size: 8px;
+	color: #fff;
+	text-align: center;
+}
+
+.footer__button--active {
+	background-color: #fff;
+}
+
+.footer__logo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0 40px 40px 0;
+	width: 118px;
+	height: 65px;
+	background-image: url('../assets/images/sprite.png');
+	background-position: -55px -35px;
+}
+
+
+
