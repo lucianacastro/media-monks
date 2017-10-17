@@ -85,7 +85,7 @@ var $lastSlide = document.getElementsByClassName('last-slide')[0];
 function initialize() {
 	var $img = new Image();
 	$img.id = 'scene';
-	$img.src = 'assets/images/backgroundWithMarks.jpg';
+	$img.src = 'assets/images/background.jpg';
 	$img.onload = function() {
 		setTimeout(function() {
 			$preload.classList.remove('visible');

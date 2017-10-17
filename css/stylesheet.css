@@ -170,7 +170,7 @@ img#scene {
 	width: 118px;
 	height: 65px;
 	background-image: url('../assets/images/sprite.png');
-	background-position: -55px -35px;
+	background-position: -55px -36px;
 }
 
 .last-slide {
@@ -272,15 +272,22 @@ img#scene {
 }
 
 @media screen and (max-width: 480px) {
+	.button-prev {
+		zoom: 0.75;
+		margin-left: 20px;
+	}
+	.button-next {
+		zoom: 0.75;
+		margin-right: 20px;
+	}
 	#main-title,
 	.last-slide__title {
+		max-width: 310px;
 		font-size: 30px;
-		/*text-align: center;
-		margin: 40px 20px !important;
-		top: 0 !important;
-		right: 0 !important;
-		bottom: 0 !important;
-		left: 0 !important;*/
+		text-shadow: 0 0 80px #000;
+	}
+	.last-slide__title {
+		margin: 45px 20px 0 0;
 	}
 	#main-title.left {
 		top: 0;
@@ -305,7 +312,17 @@ img#scene {
 		margin-top: 10px;
 	}
 	.footer__logo {
-		margin: 0 10px 10px 0;
+		zoom: 0.75;
+		margin: 0 20px 20px 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#main-title {
+		width: 255px;
+	}
+	.footer__logo {
+		zoom: 0.5;
 	}
 
 }
